@@ -55,7 +55,7 @@ Responsive design ensures that a website looks and performs optimally on all dev
 ---
 
 ## Preview  
-![Responsive Web Design Project Screenshot](https://ibb.co/pQBHR46)  
+![Responsive Web Design Project Screenshot](https://i.postimg.cc/Jh6Ddmzy/Screenshot-2024-11-16-185413.png)  
 
 ---
 
