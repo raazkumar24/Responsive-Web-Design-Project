@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!--icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- --------------------------------- AOS --------------------------------- -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--navbar using bootstrap-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">RajWeb</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon btn-open"></span>
+          <span class="btn-close"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#our-process" class="nav-link">Our Process</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Our Portfolio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- -------------------------------- home --------------------------------- -->
+      <section class="home" id="home">
+        <div
+          class="container-fluid d-flex justify-content-center align-items-center flex-column flex-lg-row min-vh-100"
+        >
+          <div class="col-lg-6 col-12" data-aos="fade-right">
+            <!--col-6 mean 50% width-->
+            <h1 class="head-line">Elevate Your Digital</h1>
+            <h2>Presence</h2>
+            <p>
+              We craft stunning, user-friendly websites that drive growth and
+              engage your audience, blending creativity and functionality to
+              leave a lasting impression.
+            </p>
+
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-x-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <button class="btn">Start Your Journey</button>
+          </div>
+
+          <div class="video col-md-6 col-12">
+            <!--col-6 mean 50% width-->
+            <!-- <img src="profile-img.png" alt="Home Image 1" class="img-fluid" /> -->
+            <video
+              src="./image/video/banner.mp4"
+              class="img-fluid"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
+        </div>
+      </section>
+      <button
+        class="btn scroll-to-top position-fixed bottom-0 end-0 m-2 bg-light-subtle border-0 z-2"
+      >
+        <a
+          href="#home"
+          aria-label="Scroll to top"
+          class="text-decoration-none text-dark"
+        >
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </button>
+
+      <!-- ------------------------------ services ------------------------------- -->
+      <section class="services" id="services">
+        <div class="container-fluid">
+          <h1 class="text-start">Our Services</h1>
+          <div class="rows">
+            <div class="box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-palette"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"
+                />
+                <path
+                  d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8m-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7"
+                />
+              </svg>
+              <h3>Web design</h3>
+              <p>
+                Eye-catching, intuitive designs that captivate your audience.
+              </p>
+            </div>
+            <div class="box" data-aos="flip-left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-code"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8z"
+                />
+              </svg>
+              <h3>Web development</h3>
+              <p>
+                Custom-built, secure, and scalable websites that meet your
+                business needs.
+              </p>
+            </div>
+            <div class="box" data-aos="flip-right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-laptop"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"
+                />
+              </svg>
+              <h3>Responsive Design</h3>
+              <p>Seamless experiences across all devices and screen sizes.</p>
+            </div>
+            <div class="box" data-aos="flip-left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-cart-check"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"
+                />
+                <path
+                  d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                />
+              </svg>
+              <h3>E-commerce Solutions</h3>
+              <p>
+                Complete online store setup, secure payment integration, and
+                product management.
+              </p>
+            </div>
+
+            <div class="box" data-aos="flip-right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-globe2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855q-.215.403-.395.872c.705.157 1.472.257 2.282.287zM4.249 3.539q.214-.577.481-1.078a7 7 0 0 1 .597-.933A7 7 0 0 0 3.051 3.05q.544.277 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9 9 0 0 1-1.565-.667A6.96 6.96 0 0 0 1.018 7.5zm1.4-2.741a12.3 12.3 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332M8.5 5.09V7.5h2.99a12.3 12.3 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.6 13.6 0 0 1 7.5 10.91V8.5zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741zm-3.282 3.696q.18.469.395.872c.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a7 7 0 0 1-.598-.933 9 9 0 0 1-.481-1.079 8.4 8.4 0 0 0-1.198.49 7 7 0 0 0 2.276 1.522zm-1.383-2.964A13.4 13.4 0 0 1 3.508 8.5h-2.49a6.96 6.96 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667m6.728 2.964a7 7 0 0 0 2.275-1.521 8.4 8.4 0 0 0-1.197-.49 9 9 0 0 1-.481 1.078 7 7 0 0 1-.597.933M8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855q.216-.403.395-.872A12.6 12.6 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.96 6.96 0 0 0 14.982 8.5h-2.49a13.4 13.4 0 0 1-.437 3.008M14.982 7.5a6.96 6.96 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008zM11.27 2.461q.266.502.482 1.078a8.4 8.4 0 0 0 1.196-.49 7 7 0 0 0-2.275-1.52c.218.283.418.597.597.932m-.488 1.343a8 8 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"
+                />
+              </svg>
+              <h3>SEO Optimization</h3>
+              <p>
+                Enhance search engine visibility to drive organic traffic and
+                increase engagement.
+              </p>
+            </div>
+
+            <div class="box" data-aos="flip-left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-shield-check"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"
+                />
+                <path
+                  d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"
+                />
+              </svg>
+              <h3>Website Security</h3>
+              <p>
+                Secure your website with the latest protection measures and
+                regular monitoring.
+              </p>
+            </div>
+
+            <div class="box" data-aos="flip-up">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-person-video2"
+                viewBox="0 0 16 16"
+              >
+                <path d="M10 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                <path
+                  d="M2 1a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zM1 3a1 1 0 0 1 1-1h2v2H1zm4 10V2h9a1 1 0 0 1 1 1v9c0 .285-.12.543-.31.725C14.15 11.494 12.822 10 10 10c-3.037 0-4.345 1.73-4.798 3zm-4-2h3v2H2a1 1 0 0 1-1-1zm3-1H1V8h3zm0-3H1V5h3z"
+                />
+              </svg>
+              <h3>Content Creation</h3>
+              <p>
+                Engaging and optimized content to effectively communicate your
+                brand’s message.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------- process ------------------------------- -->
+      <section class="our-process" id="our-process">
+        <div class="container-fluid">
+          <h1 class="text-start">Our Process</h1>
+          <div class="rows">
+            <div class="box" data-aos="fade-right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-1-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312z"
+                />
+              </svg>
+              <h3>Discovery</h3>
+              <p>We learn about your business, goals, and vision.</p>
+            </div>
+
+            <div class="box" data-aos="fade-left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-2-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z"
+                />
+              </svg>
+              <h3>Design</h3>
+              <p>
+                We create stunning, user-centric designs tailored to your brand.
+              </p>
+            </div>
+
+            <div class="box" data-aos="fade-right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-3-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-8.082.414c.92 0 1.535.54 1.541 1.318.012.791-.615 1.36-1.588 1.354-.861-.006-1.482-.469-1.54-1.066H5.104c.047 1.177 1.05 2.144 2.754 2.144 1.653 0 2.954-.937 2.93-2.396-.023-1.278-1.031-1.846-1.734-1.916v-.07c.597-.1 1.505-.739 1.482-1.876-.03-1.177-1.043-2.074-2.637-2.062-1.675.006-2.59.984-2.625 2.12h1.248c.036-.556.557-1.054 1.348-1.054.785 0 1.348.486 1.348 1.195.006.715-.563 1.237-1.342 1.237h-.838v1.072h.879Z"
+                />
+              </svg>
+              <h3>Development</h3>
+              <p>We build your website using the latest technologies.</p>
+            </div>
+
+            <div class="box" data-aos="fade-left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-4-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M7.519 5.057c-.886 1.418-1.772 2.838-2.542 4.265v1.12H8.85V12h1.26v-1.559h1.007V9.334H10.11V4.002H8.176zM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218"
+                />
+              </svg>
+              <h3>Delivery</h3>
+              <p>We launch your site and provide ongoing support.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews">
+          <h2 data-aos="zoom-in">What Our Clients Say</h2>
+          <div class="review-container">
+            <div class="review-card" data-aos="zoom-in-up">
+              <div class="review-content">
+                <div class="quote-icon">❝</div>
+                <p>
+                  "The service was outstanding! The team went above and beyond,
+                  and I couldn’t be happier with the result."
+                </p>
+              </div>
+              <div class="reviewer-info">
+                <div class="reviewer-photo">
+                  <img src="./image/video/cat.jpg" alt="Client 1" />
+                </div>
+                <div class="reviewer-details">
+                  <h3>John Smith</h3>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+            </div>
+            <!-- Repeat for each review -->
+
+            <div class="review-card" data-aos="zoom-in-up">
+              <div class="review-content">
+                <div class="quote-icon">❝</div>
+                <p>
+                  "The service was outstanding! The team went above and beyond,
+                  and I couldn’t be happier with the result."
+                </p>
+              </div>
+              <div class="reviewer-info">
+                <div class="reviewer-photo">
+                  <img src="./image/video/cat.jpg" alt="Client 1" />
+                </div>
+                <div class="reviewer-details">
+                  <h3>John Smith</h3>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card" data-aos="zoom-in-up">
+              <div class="review-content">
+                <div class="quote-icon">❝</div>
+                <p>
+                  "The service was outstanding! The team went above and beyond,
+                  and I couldn’t be happier with the result."
+                </p>
+              </div>
+              <div class="reviewer-info">
+                <div class="reviewer-photo">
+                  <img src="./image/video/cat.jpg" alt="Client 1" />
+                </div>
+                <div class="reviewer-details">
+                  <h3>John Smith</h3>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------ portfolio ------------------------------ -->
+      <section class="our-portfolio" id="portfolio">
+        <div class="container-fluid">
+          <h1 class="text-start">Our Portfolio</h1>
+          <div class="col">
+            <div class="project-box">
+              <img src="./image/video/pro.png" alt="Project Image" />
+              <div class="project-details">
+                <h3>Gourmet Delights</h3>
+                <p>
+                  An appetizing website for a high-end restaurant, featuring an
+                  online reservation system and menu showcase.
+                </p>
+                <div class="tech-stack">
+                  <span>WordPress</span>
+                  <span>PHP</span>
+                  <span>MySQL</span>
+                </div>
+                <a href="#" class="view-project">View Project</a>
+              </div>
+            </div>
+
+            <div class="project-box">
+              <img src="./image/video/pro.png" alt="Project Image" />
+              <div class="project-details">
+                <h3>Gourmet Delights</h3>
+                <p>
+                  An appetizing website for a high-end restaurant, featuring an
+                  online reservation system and menu showcase.
+                </p>
+                <div class="tech-stack">
+                  <span>WordPress</span>
+                  <span>PHP</span>
+                  <span>MySQL</span>
+                </div>
+                <a href="#" class="view-project">View Project</a>
+              </div>
+            </div>
+
+            <div class="project-box">
+              <img src="./image/video/pro.png" alt="Project Image" />
+              <div class="project-details">
+                <h3>Gourmet Delights</h3>
+                <p>
+                  An appetizing website for a high-end restaurant, featuring an
+                  online reservation system and menu showcase.
+                </p>
+                <div class="tech-stack">
+                  <span>WordPress</span>
+                  <span>PHP</span>
+                  <span>MySQL</span>
+                </div>
+                <a href="#" class="view-project">View Project</a>
+              </div>
+            </div>
+
+            <div class="project-box">
+              <img src="./image/video/pro.png" alt="Project Image" />
+              <div class="project-details">
+                <h3>Gourmet Delights</h3>
+                <p>
+                  An appetizing website for a high-end restaurant, featuring an
+                  online reservation system and menu showcase.
+                </p>
+                <div class="tech-stack">
+                  <span>WordPress</span>
+                  <span>PHP</span>
+                  <span>MySQL</span>
+                </div>
+                <a href="#" class="view-project">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------------------------- about -------------------------------- -->
+      <section class="about-us" id="about">
+        <div class="container-fluid">
+          <h1 class="text-start">About Us</h1>
+          <div class="row">
+            <div class="video col-md-6 col-12">
+              <video
+                src="./image/video/about-us.mp4"
+                autoplay
+                muted
+                loop
+                alt="About Us Image"
+              />
+            </div>
+            <div class="about-content col-lg-6 col-12">
+              <p>
+                We are a team of passionate developers and designers who are
+                committed to providing excellent customer service and creating
+                innovative solutions for our clients. We strive to deliver
+                exceptional experiences to our customers by providing top-notch
+                services and high-quality products.
+              </p>
+              <p>
+                Our mission is to help businesses grow and succeed by providing
+                them with the tools and resources they need to achieve their
+                goals.
+              </p>
+            </div>
+          </div>
+          <!-- -------------------------------- team --------------------------------- -->
+          <div class="our-team">
+            <h1 class="text-center">Our Team</h1>
+            <p>
+              Our team is a group of skilled professionals dedicated to
+              delivering exceptional results. Together, we combine creativity
+              and expertise to bring fresh ideas to life and help our clients
+              succeed. Meet the people behind our success.
+            </p>
+            <div class="team-container">
+              <div class="team-member">
+                <div class="member-photo">
+                  <img src="./image/video/team.png" alt="Team Member 1" />
+                </div>
+                <div class="member-info">
+                  <h3>Jane Doe</h3>
+                  <p>Frontend Developer</p>
+                  <div class="social-links">
+                    <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="team-member">
+                <div class="member-photo">
+                  <img src="./image/video/team.png" alt="Team Member 1" />
+                </div>
+                <div class="member-info">
+                  <h3>Jane Doe</h3>
+                  <p>Frontend Developer</p>
+                  <div class="social-links">
+                    <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="team-member">
+                <div class="member-photo">
+                  <img src="./image/video/team.png" alt="Team Member 1" />
+                </div>
+                <div class="member-info">
+                  <h3>Jane Doe</h3>
+                  <p>Frontend Developer</p>
+                  <div class="social-links">
+                    <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="team-member">
+                <div class="member-photo">
+                  <img src="./image/video/team.png" alt="Team Member 1" />
+                </div>
+                <div class="member-info">
+                  <h3>Jane Doe</h3>
+                  <p>Frontend Developer</p>
+                  <div class="social-links">
+                    <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat for each team member -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------- contact ------------------------------- -->
+      <section class="contact" id="contact">
+        <h1 class="text-start">Contact Us</h1>
+        <p class="text-lg-center p-3">
+          Contact us for any questions or inquiries. We'd love to hear from you!
+        </p>
+        <div class="container-fluid d-flex flex-wrap">
+          <div class="video col-md-6 col-12">
+            <video
+              src="./image/video/contact.mp4
+            "
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
+          <form
+            action="submit.php"
+            method="post"
+            class="contact-form col-md-6 col-12"
+          >
+            <h3>Get in Touch</h3>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+              <div id="emailError" class="error"></div>
+              <div id="emailSuccess" class="success"></div>
+              <div id="emailPatternError" class="error"></div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!--footer-->
+      <footer>
+        <div class="container-fluid">
+          <div class="style">
+            <h1 class="fs-3">
+              Style By <a href="#rajweb" class="fs-5">RajWeb</a>
+            </h1>
+            <p>
+              We believe in creating a beautiful and stylish restaurant
+              experience that reflects the essence of your culinary vision. This
+              is where your culinary dreams come to life.<br />
+              Our team of skilled chefs and artisans will create a unique and
+              memorable culinary experience for your guests.
+            </p>
+          </div>
+
+          <div class="flex-container">
+            <div class="address">
+              <h2>office</h2>
+              IIT Road <br />
+              Kanpur, India <br />
+              Pincode: 208015 <br />
+
+              <div class="email-address">
+                <a href="mailto:4lTlO@pro.png.com">4lTlO@pro.png.com</a>
+                <span></span>
+                <!--for underline-->
+                <div class="phone-no">+123456789</div>
+              </div>
+            </div>
+            <!--menu links-->
+            <div class="links">
+              <h2>Link</h2>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!--newsletter container-->
+          <div class="newsletter">
+            <h2>newsletter</h2>
+            <p>
+              Subscribe to our newsletter for get our latest update and news
+            </p>
+            <div class="input-box">
+              <i class="fa fa-envelope"></i>
+              <input type="email" placeholder="Enter your email" />
+              <i class="fa fa-arrow-right submit"></i>
+            </div>
+            <span></span>
+            <!--for underline-->
+
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-around pt-3">
+        <div class="policy">
+          <p><a href="https://www.termsfeed.com/live/8d77607b-5cdc-433a-b585-03591993f67e">Privacy Policy | Terms & Conditions</a></p>
+          <!--for underline-->
+        </div>
+        <div class="copyright text-center">
+          <p>Copyright © 2023 RajWeb. All rights reserved.</p>
+        </div>
+      </div>
+      </div>
+      </footer>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+
+<!-- --------------------------------- aos --------------------------------- -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+        // Global settings:
+        duration: 1200, // Animation duration in ms
+        easing: 'ease-in-out', // Default easing
+        once: false, // Whether animation happens only once or every scroll
+        mirror: true, // Animate elements out while scrolling past them
+    });
+
+</script>
+    <script src="script.js"></script>
+  </body>
+</html>
