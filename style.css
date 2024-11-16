@@ -51,6 +51,12 @@ nav .navbar-brand {
   color: transparent;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
@@ -60,6 +66,7 @@ section {
   padding: 20px;
   /* align-items: center; */
   /* display: flex; */
+  overflow-x: hidden;
 }
 
 .home {
@@ -584,95 +591,107 @@ section {
   transition: background 0.3s ease;
 }
 
-footer .container-fluid {
-  display: flex;
-  justify-content: space-between;
-  /* background-image: linear-gradient(to right, #21124a, #321e1e); */
-  background-image: linear-gradient(
-    -225deg,
-    #ff3cac 0%,
-    #562b7c 52%,
-    #2b86c5 100%
-  );
+/* ---------------------------- footer start here --------------------------- */
+
+footer {
+  background-image: linear-gradient(to right, #21124a, #321e1e);
   color: #fff;
   padding: 50px 25px;
-  position: relative;
+  border-radius: 70px 0 0 0;
 }
 
-footer.container-fluid h2 {
+footer .container {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .container h1 {
   font-size: 20px;
   margin-bottom: 25px;
 }
 
-footer.container-fluid p {
+footer .container p {
   font-size: 14px;
   line-height: 18px;
 }
 
-footer .style {
+footer .container .style {
   width: 300px;
 }
 
-footer .flex-container {
+footer .container .flex-container {
   display: flex;
+  align-items: flex-start;
   justify-content: space-around;
   width: 600px;
-  text-align: center;
 }
 
-footer .address {
+.flex-container .address {
   max-width: 300px;
-}
-
-.address .email-address :not(span) {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+}
+
+.address .email-address {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.email-address p {
+  margin-bottom: 15px;
 }
 
 .email-address a {
   color: #fff;
   text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 3px;
 }
 
-span {
-  border-top: 1px solid #fff;
-  display: block;
-  margin-top: 3px;
+.email-address a:hover {
+  color: #007bff;
 }
 
-footer .links {
+.flex-container .links {
   max-width: 300px;
-}
-
-.links h1 {
-  text-align: end;
-}
-
-.links ul {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  align-items: center;
 }
 
-.links ul li {
+.container .flex-container .links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.flex-container .links ul li {
   list-style: none;
   cursor: pointer;
 }
 
-.links ul li a {
+.flex-container .links ul li a {
   color: #fff;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-footer .newsletter {
+.flex-container .links ul li a:hover {
+  color: #007bff;
+}
+
+footer .container .newsletter {
   max-width: 300px;
 }
 
 .newsletter .input-box {
   display: flex;
   margin-top: 10px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 4px;
 }
 
 .newsletter .input-box input {
@@ -683,11 +702,17 @@ footer .newsletter {
   outline: none;
 }
 .input-box i {
-  margin: 5px 10px;
+  margin: 1px 10px;
 }
 
+/* submit icons*/
 .input-box .submit {
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.input-box .submit:hover {
+  color: #007bff;
 }
 
 .newsletter .social-links {
@@ -697,43 +722,60 @@ footer .newsletter {
 }
 
 .newsletter .social-links a {
+  color: #fff;
   text-decoration: none;
   font-size: 20px;
   border-radius: 50%;
   background-color: #fff;
   width: 30px;
   height: 30px;
+  text-align: center;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .newsletter .social-links a i {
   color: #000000;
-  padding: 15px;
+  padding: 10px;
+  transition: all 0.3s ease;
 }
 
-.policy p a{
-  text-decoration: none;}
-
-.policy p a:hover {
- text-decoration: underline;
+.newsletter .social-links a i:hover {
+  color: #007bff;
 }
+
+footer .copyright {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  border-top: 1px solid #fff;
+  padding-top: 20px;
+}
+
+footer .copyright a {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+/* ---------------------------- footer responsive --------------------------- */
 
 @media screen and (max-width: 992px) {
-  footer .style {
+  footer .container .style {
     max-width: 200px;
   }
 
-  footer .address {
+  .flex-container .address {
     max-width: 200px;
   }
 
-  footer .links {
+  r .flex-container .links {
     max-width: 200px;
   }
 
-  footer .newsletter {
+  footer .container .newsletter {
     max-width: 200px;
   }
 
@@ -746,20 +788,22 @@ footer .newsletter {
   }
 }
 
+/* ---------------------------- footer responsive --------------------------- */
+
 @media screen and (max-width: 768px) {
   footer .newsletter {
     max-width: 150px;
   }
 
-  footer .address {
+  .flex-container .address {
     max-width: 150px;
   }
 
-  footer .links {
+  .flex-container .links {
     max-width: 150px;
   }
 
-  footer .newsletter {
+  footer .container .newsletter {
     max-width: 150px;
   }
 
@@ -772,12 +816,15 @@ footer .newsletter {
   }
 }
 
+/* ---------------------------- footer responsive --------------------------- */
+
 @media screen and (max-width: 576px) {
-  footer .container-fluid {
+  footer .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    padding: 60px 40px;
   }
 
   footer h1 {
@@ -788,29 +835,33 @@ footer .newsletter {
     font-size: 12px;
   }
 
-  footer .style {
+  footer .container .style {
     min-width: 100%;
   }
 
-  footer .newsletter {
+  footer .container .flex-container .links {
+    font-size: 12px;
+  }
+
+  footer .container .newsletter {
     min-width: 100%;
   }
 
-  footer .flex-container {
+  footer .container .flex-container {
     display: flex;
     justify-content: space-between;
     max-width: 100%;
+    align-items: flex-start;
   }
 }
 
-/* Responsive design */
-
+/* --------------------------- sections responsive -------------------------- */
 @media (max-width: 768px) {
   section {
     padding: 10px;
   }
 
-  h1:not(.home h1) {
+  h1:not(.home h1, footer h1) {
     font-size: 2rem;
   }
 

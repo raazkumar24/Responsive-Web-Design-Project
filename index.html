@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!-- ------------------------------ bootstrap ------------------------------ -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,6 +18,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <!-- ------------------------------ bootstrap ------------------------------ -->
 
     <link
       rel="stylesheet"
@@ -26,9 +29,9 @@
     />
 
     <!-- --------------------------------- AOS --------------------------------- -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-
+    <!-- ----------------------------- custom css ------------------------------ -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -147,7 +150,7 @@
       <!-- ------------------------------ services ------------------------------- -->
       <section class="services" id="services">
         <div class="container-fluid">
-          <h1 class="text-start">Our Services</h1>
+          <h1 class="text-start" data-aos="fade-right">Our Services</h1>
           <div class="rows">
             <div class="box">
               <svg
@@ -298,7 +301,7 @@
       <!-- ------------------------------- process ------------------------------- -->
       <section class="our-process" id="our-process">
         <div class="container-fluid">
-          <h1 class="text-start">Our Process</h1>
+          <h1 class="text-start" data-aos="fade-right">Our Process</h1>
           <div class="rows">
             <div class="box" data-aos="fade-right">
               <svg
@@ -439,9 +442,9 @@
       <!-- ------------------------------ portfolio ------------------------------ -->
       <section class="our-portfolio" id="portfolio">
         <div class="container-fluid">
-          <h1 class="text-start">Our Portfolio</h1>
+          <h1 class="text-start" data-aos="fade-right">Our Portfolio</h1>
           <div class="col">
-            <div class="project-box">
+            <div class="project-box" data-aos="zoom-in-right">
               <img src="./image/video/pro.png" alt="Project Image" />
               <div class="project-details">
                 <h3>Gourmet Delights</h3>
@@ -458,7 +461,7 @@
               </div>
             </div>
 
-            <div class="project-box">
+            <div class="project-box" data-aos="zoom-in-left">
               <img src="./image/video/pro.png" alt="Project Image" />
               <div class="project-details">
                 <h3>Gourmet Delights</h3>
@@ -475,7 +478,7 @@
               </div>
             </div>
 
-            <div class="project-box">
+            <div class="project-box" data-aos="zoom-in-right">
               <img src="./image/video/pro.png" alt="Project Image" />
               <div class="project-details">
                 <h3>Gourmet Delights</h3>
@@ -492,7 +495,7 @@
               </div>
             </div>
 
-            <div class="project-box">
+            <div class="project-box" data-aos="zoom-in-left">
               <img src="./image/video/pro.png" alt="Project Image" />
               <div class="project-details">
                 <h3>Gourmet Delights</h3>
@@ -515,7 +518,7 @@
       <!-- -------------------------------- about -------------------------------- -->
       <section class="about-us" id="about">
         <div class="container-fluid">
-          <h1 class="text-start">About Us</h1>
+          <h1 class="text-start" data-aos="fade-right">About Us</h1>
           <div class="row">
             <div class="video col-md-6 col-12">
               <video
@@ -526,7 +529,7 @@
                 alt="About Us Image"
               />
             </div>
-            <div class="about-content col-lg-6 col-12">
+            <div class="about-content col-lg-6 col-12" data-aos="fade-left">
               <p>
                 We are a team of passionate developers and designers who are
                 committed to providing excellent customer service and creating
@@ -543,7 +546,7 @@
           </div>
           <!-- -------------------------------- team --------------------------------- -->
           <div class="our-team">
-            <h1 class="text-center">Our Team</h1>
+            <h1 class="text-center" data-aos="zoom-in">Our Team</h1>
             <p>
               Our team is a group of skilled professionals dedicated to
               delivering exceptional results. Together, we combine creativity
@@ -551,7 +554,7 @@
               succeed. Meet the people behind our success.
             </p>
             <div class="team-container">
-              <div class="team-member">
+              <div class="team-member" data-aos="zoom-in-up">
                 <div class="member-photo">
                   <img src="./image/video/team.png" alt="Team Member 1" />
                 </div>
@@ -566,7 +569,7 @@
                 </div>
               </div>
 
-              <div class="team-member">
+              <div class="team-member" data-aos="zoom-in-up">
                 <div class="member-photo">
                   <img src="./image/video/team.png" alt="Team Member 1" />
                 </div>
@@ -581,7 +584,7 @@
                 </div>
               </div>
 
-              <div class="team-member">
+              <div class="team-member" data-aos="zoom-in-up">
                 <div class="member-photo">
                   <img src="./image/video/team.png" alt="Team Member 1" />
                 </div>
@@ -596,7 +599,7 @@
                 </div>
               </div>
 
-              <div class="team-member">
+              <div class="team-member" data-aos="zoom-in-up">
                 <div class="member-photo">
                   <img src="./image/video/team.png" alt="Team Member 1" />
                 </div>
@@ -618,125 +621,131 @@
 
       <!-- ------------------------------- contact ------------------------------- -->
       <section class="contact" id="contact">
-        <h1 class="text-start">Contact Us</h1>
+        <h1 class="text-start" data-aos="fade-right">Contact Us</h1>
         <p class="text-lg-center p-3">
           Contact us for any questions or inquiries. We'd love to hear from you!
         </p>
-        <div class="container-fluid d-flex flex-wrap">
-          <div class="video col-md-6 col-12">
-            <video
-              src="./image/video/contact.mp4
+        <div class="container-fuild">
+          <div class="container-fluid d-flex flex-wrap">
+            <div class="video col-md-6 col-12">
+              <video
+                src="./image/video/contact.mp4
             "
-              autoplay
-              muted
-              loop
-            ></video>
+                autoplay
+                muted
+                loop
+              ></video>
+            </div>
+            <form
+              action="submit.php"
+              method="post"
+              class="contact-form col-md-6 col-12"
+              data-aos="fade-left"
+            >
+              <h3>Get in Touch</h3>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <div id="emailError" class="error"></div>
+                <div id="emailSuccess" class="success"></div>
+                <div id="emailPatternError" class="error"></div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
           </div>
-          <form
-            action="submit.php"
-            method="post"
-            class="contact-form col-md-6 col-12"
-          >
-            <h3>Get in Touch</h3>
-            <div class="form-group">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-              <div id="emailError" class="error"></div>
-              <div id="emailSuccess" class="success"></div>
-              <div id="emailPatternError" class="error"></div>
-            </div>
-            <div class="form-group">
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <div class="form-group">
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-          </form>
         </div>
       </section>
+    </main>
 
-      <!--footer-->
-      <footer>
-        <div class="container-fluid">
-          <div class="style">
-            <h1 class="fs-3">
-              Style By <a href="#rajweb" class="fs-5">RajWeb</a>
-            </h1>
+    <!-- ------------------------------- footer -------------------------------- -->
+    <footer>
+      <div class="container">
+        <div class="style">
+          <h1>Style by Raj shekhar</h1>
+          <p>
+            style is a website that provides a wide range of services to help
+            you succeed in your business.Our services include website design,
+            digital marketing, social media management, and more.
+          </p>
+        </div>
+
+        <div class="flex-container">
+          <div class="address">
+            <h1>office</h1>
             <p>
-              We believe in creating a beautiful and stylish restaurant
-              experience that reflects the essence of your culinary vision. This
-              is where your culinary dreams come to life.<br />
-              Our team of skilled chefs and artisans will create a unique and
-              memorable culinary experience for your guests.
-            </p>
-          </div>
-
-          <div class="flex-container">
-            <div class="address">
-              <h2>office</h2>
               IIT Road <br />
               Kanpur, India <br />
               Pincode: 208015 <br />
-
-              <div class="email-address">
-                <a href="mailto:4lTlO@pro.png.com">4lTlO@pro.png.com</a>
-                <span></span>
-                <!--for underline-->
-                <div class="phone-no">+123456789</div>
-              </div>
-            </div>
-            <!--menu links-->
-            <div class="links">
-              <h2>Link</h2>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <!--newsletter container-->
-          <div class="newsletter">
-            <h2>newsletter</h2>
-            <p>
-              Subscribe to our newsletter for get our latest update and news
             </p>
-            <div class="input-box">
-              <i class="fa fa-envelope"></i>
-              <input type="email" placeholder="Enter your email" />
-              <i class="fa fa-arrow-right submit"></i>
-            </div>
-            <span></span>
-            <!--for underline-->
 
-            <div class="social-links">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <div class="email-address">
+              <p>
+                <a href="mailto:4lTlO@example.com">4lTlO@example.com</a>
+              </p>
+              <span></span>
+              <!--for underline-->
+              <p>+91 9646778089</p>
             </div>
           </div>
+          <!--menu links-->
+          <div class="links">
+            <h1>Link</h1>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="d-flex justify-content-around pt-3">
-        <div class="policy">
-          <p><a href="https://www.termsfeed.com/live/8d77607b-5cdc-433a-b585-03591993f67e">Privacy Policy | Terms & Conditions</a></p>
+
+        <!--newsletter container-->
+        <div class="newsletter">
+          <h1>newsletter</h1>
+          <p>Subscribe to our newsletter for get our latest update and news</p>
+          <div class="input-box">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Enter your email" />
+            <i class="fa-solid fa-arrow-right submit"></i>
+          </div>
+          <span></span>
           <!--for underline-->
-        </div>
-        <div class="copyright text-center">
-          <p>Copyright © 2023 RajWeb. All rights reserved.</p>
+
+          <!--social media links-->
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
         </div>
       </div>
+
+      <!--copyright-->
+      <div class="copyright">
+        <p>
+          copyright @2024. designed by <a href="#">Raj shekhar</a>. All rights
+          reserved
+        </p>
+        <p>
+          <a
+            href="https://www.termsfeed.com/live/8d77607b-5cdc-433a-b585-03591993f67e"
+            >Privacy Policy | Terms & Conditions</a
+          >
+        </p>
       </div>
-      </footer>
-    </main>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -744,20 +753,18 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- --------------------------------- aos --------------------------------- -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<!-- --------------------------------- aos --------------------------------- -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-  AOS.init({
+    <script>
+      AOS.init({
         // Global settings:
         duration: 1200, // Animation duration in ms
-        easing: 'ease-in-out', // Default easing
+        easing: "ease-in-out", // Default easing
         once: false, // Whether animation happens only once or every scroll
         mirror: true, // Animate elements out while scrolling past them
-    });
-
-</script>
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
