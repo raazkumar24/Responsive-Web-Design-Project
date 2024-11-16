@@ -32,7 +32,7 @@ The website is designed to adapt seamlessly across various screen sizes, ensurin
 
 ## Installation  
 
-### Play the Web Version  
+### Open in Web Version  
 1. Visit the [Live Preview](https://raazkumar24.github.io/Responsive-Web-Design-Project/).  
 2. Explore the responsive design features directly in your browser.  
 
@@ -55,8 +55,7 @@ Responsive design ensures that a website looks and performs optimally on all dev
 ---
 
 ## Preview  
-![Responsive Web Design Project Screenshot](https://via.placeholder.com/800x400.png?text=Responsive+Web+Design+Preview)  
-*(Replace this placeholder with an actual screenshot of your project for better engagement.)*  
+![Responsive Web Design Project Screenshot](https://drive.google.com/file/d/12qlVQmUUdefMmbDHTnYZSYkLc35TVzfe/view?usp=drive_link)  
 
 ---
 
