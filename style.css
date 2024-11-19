@@ -64,8 +64,8 @@ body {
 section {
   min-height: 100vh;
   padding: 20px;
-  /* align-items: center; */
-  /* display: flex; */
+  align-items: center;
+  display: flex;
   overflow-x: hidden;
 }
 
@@ -547,6 +547,7 @@ section {
 }
 
 /* -------------------------------- contact ------------------------------- */
+
 .contact h1 {
   font-size: 2.5rem;
   font-weight: bold;
