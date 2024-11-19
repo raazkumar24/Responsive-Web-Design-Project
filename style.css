@@ -161,36 +161,53 @@ section {
 
 .services .rows {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .services .box {
-  width: 30%;
-  margin: 20px;
-  border: 1px solid #b6b6b6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
   border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out !important;
+  will-change: transform;
+  margin-bottom: 20px;
+  text-align: center;
   &:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px);
   }
 }
 
+/* Flex properties for each box */
+.services .box {
+  flex: 1 1 30%; /* Allow each box to take up 30% of the container by default */
+  max-width: 30%; /* Ensure boxes do not grow larger than 30% */
+  min-width: 280px; /* Prevent the boxes from getting too small */
+  max-height: 40%;
+  min-height: 250px; /* Prevent the boxes from getting too small */
+}
+
 .services .box h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .services .box p {
   font-size: 1rem;
+  color: #6c757d;
 }
 
 .services .box svg {
   width: 50px;
   height: 50px;
-  fill: #0077ff;
   margin-bottom: 5px;
 }
 
@@ -268,10 +285,11 @@ section {
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.review-card:hover {
-  transform: scale(1.05);
+  transition: all 0.3s ease-in-out !important;
+  cursor: pointer;
+  &:hover {
+    transform: translateY(-5px) !important;
+  }
 }
 
 .quote-icon {
@@ -888,8 +906,7 @@ footer .copyright a {
 
   /* -------------------------------- services -------------------------------- */
   .services .box {
-    width: 100%;
-    margin: 10px 0;
+    max-width: 90%; /* Ensure boxes do not grow larger than 30% */
   }
 
   /* ---------------------------------- about --------------------------------- */
